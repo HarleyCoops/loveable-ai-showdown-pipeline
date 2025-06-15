@@ -66,3 +66,17 @@
  ## Contact
 
  For questions or feedback, please open an issue on GitHub or contact the maintainers.
+
+## Deploy to Hugging Face Spaces (per dialect)
+
+To deploy a Gradio chat app for any dialect, copy and run the corresponding command below (ensure your .env is set up with your Hugging Face and OpenAI credentials):
+
+| Dialect Name              | Deployment Command                                                                 |
+|--------------------------|----------------------------------------------------------------------------------|
+| Thlinkit_Skutkwan        | `python HFSpacesDeployment.py --dialect-name "Thlinkit_Skutkwan" --verbose`        |
+| Haida_Kaigani            | `python HFSpacesDeployment.py --dialect-name "Haida_Kaigani" --verbose`            |
+| Haida_Masset             | `python HFSpacesDeployment.py --dialect-name "Haida_Masset" --verbose`             |
+| Tshimshian_Kithatlā      | `python HFSpacesDeployment.py --dialect-name "Tshimshian_Kithatlā" --verbose`      |
+| Tshimshian_Kitunto       | `python HFSpacesDeployment.py --dialect-name "Tshimshian_Kitunto" --verbose`       |
+
+> **Tip:** Add `--public` to the command if you want the Hugging Face Space to be public.

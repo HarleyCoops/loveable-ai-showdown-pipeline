@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """
 HFSpacesDeployment - Automated deployment of fine-tuned models to Hugging Face Spaces.
@@ -111,7 +110,19 @@ class HFSpacesDeployer:
         (output_dir / "requirements.txt").write_text(REQUIREMENTS_TEMPLATE, encoding='utf-8')
         username = self.hf_api.whoami()['name']
         deploy_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        readme_content = f"""# AI Chat Interface
+        # Add Hugging Face Spaces YAML config block
+        yaml_block = f'''---
+title: {space_name}
+emoji: 🚀
+colorFrom: indigo
+colorTo: blue
+sdk: gradio
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+---
+'''
+        readme_content = f"""{yaml_block}# AI Chat Interface
 
 A Gradio-based chat interface for interacting with a fine-tuned OpenAI model.
 
