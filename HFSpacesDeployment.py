@@ -110,18 +110,20 @@ class HFSpacesDeployer:
         (output_dir / "requirements.txt").write_text(REQUIREMENTS_TEMPLATE, encoding='utf-8')
         username = self.hf_api.whoami()['name']
         deploy_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        # Add Hugging Face Spaces YAML config block
-        yaml_block = f'''---
-title: {{title}}
-emoji: {{emoji}}
-colorFrom: {{colorFrom}}
-colorTo: {{colorTo}}
-sdk: {{sdk}}
-sdk_version: "{{sdkVersion}}"
+
+        # Patch: Provide actual metadata, not placeholders
+        yaml_block = f"""---
+title: "{model_id}"
+emoji: "💬"
+colorFrom: "blue"
+colorTo: "indigo"
+sdk: "gradio"
+sdk_version: "4.0.0"
 app_file: app.py
 pinned: false
 ---
-'''
+"""
+
         readme_content = f"""{yaml_block}# AI Chat Interface
 
 A Gradio-based chat interface for interacting with a fine-tuned OpenAI model.
