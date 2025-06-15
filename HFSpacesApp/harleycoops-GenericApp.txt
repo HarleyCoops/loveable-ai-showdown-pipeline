@@ -1,2 +1,261 @@
 
-# Placeholder for Gradio template (harleycoops-GenericApp.txt)
+Directory structure:
+└── your-app-name/
+    ├── README.md
+    ├── app.py
+    ├── requirements.txt
+    └── .gradio/
+        └── certificate.pem
+
+================================================
+FILE: README.md
+================================================
+# AI Chat Interface
+
+A Gradio-based chat interface for interacting with fine-tuned OpenAI models.
+
+## Features
+
+- Clean, responsive chat interface
+- No login required
+- Web-accessible when deployed
+- Easy to customize and extend
+
+## Deployment Options
+
+### 1. Hugging Face Spaces Deployment (Recommended)
+
+1. Create a new Space on [Hugging Face](https://huggingface.co/spaces):
+   - Click "New Space"
+   - Select "Gradio" as the SDK
+   - Choose a name for your space
+
+2. Add your OpenAI API key:
+   - Go to Space Settings → Repository Secrets
+   - Add a new secret named `OPENAI_API_KEY`
+   - Paste your OpenAI API key
+
+3. Upload the following files to your Space:
+   - `app.py`
+   - `requirements.txt`
+
+### 2. Local Development
+
+1. Clone your repository:
+   ```bash
+   git clone https://huggingface.co/spaces/your-username/your-space-name
+   cd your-space-name
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up environment variables:
+   - Create a `.env` file
+   - Add your OpenAI API key: `OPENAI_API_KEY=your_key_here`
+
+4. Run the application:
+   ```bash
+   python app_huggingface.py
+   ```
+
+### 3. GitHub Repository Setup
+
+The repository is structured as follows:
+```
+StoneyAPP/
+├── app_huggingface.py     # Main application file
+├── requirements.txt       # Python dependencies
+├── .gitignore            # Git ignore rules
+└── README.md             # Documentation
+```
+
+## Environment Variables
+
+Required environment variables:
+- `OPENAI_API_KEY`: Your OpenAI API key
+
+## Model Information
+
+The application uses a fine-tuned OpenAI model:
+- Model ID: `ft:gpt-4o-mini-2024-07-18:personal:stoney-mini:AfX6g37I`
+- Temperature: 0.7
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## Support
+
+For issues or questions, please open a GitHub issue in the repository.
+
+================================================
+FILE: app.py
+================================================
+import gradio as gr
+import openai
+import os
+
+# Initialize OpenAI client with API key from environment
+client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = "ft:gpt-4o-mini-2024-07-18:personal:stoney-mini:AfX6g37I"
+
+def chat_with_stoney(message, history):
+    # Format the conversation history
+    messages = []
+    for human, assistant in history:
+        messages.append({"role": "user", "content": human})
+        messages.append({"role": "assistant", "content": assistant})
+    messages.append({"role": "user", "content": message})
+
+    try:
+        response = client.chat.completions.create(
+            model=MODEL,
+            messages=messages,
+            temperature=0.7,
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+# Create the Gradio interface
+demo = gr.ChatInterface(
+    fn=chat_with_stoney,
+    title="💬 Chat with Stoney-1",
+    description="Welcome to Stoney-1! I'm here to help answer your questions.",
+    examples=[
+        "Hello! How are you today?",
+        "What kind of questions can you help me with?",
+        "Tell me about yourself"
+    ],
+    theme=gr.themes.Soft()
+)
+
+# Launch the app
+if __name__ == "__main__":
+    demo.launch()
+
+================================================
+FILE: app_huggingface.py
+================================================
+import gradio as gr
+import openai
+import os
+from datetime import datetime
+import logging
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Model configuration
+MODEL = "ft:gpt-4o-mini-2024-07-18:personal:stoney-mini:AfX6g37I"
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+
+def initialize_openai_client():
+    """Initialize OpenAI client with error handling"""
+    try:
+        if not OPENAI_API_KEY:
+            raise ValueError("OPENAI_API_KEY not found in environment variables")
+        return openai.OpenAI(api_key=OPENAI_API_KEY)
+    except Exception as e:
+        logger.error(f"Error initializing OpenAI client: {str(e)}")
+        raise
+
+def chat_with_stoney(message: str, history: list) -> str:
+    """Chat with the Stoney-1 model"""
+    try:
+        logger.info(f"Received message at {datetime.now()}: {message}")
+        
+        # Format conversation history
+        messages = []
+        for human, assistant in history:
+            messages.append({"role": "user", "content": human})
+            messages.append({"role": "assistant", "content": assistant})
+        messages.append({"role": "user", "content": message})
+        
+        # Initialize client and make API call
+        client = initialize_openai_client()
+        logger.info(f"Sending request to model: {MODEL}")
+        
+        response = client.chat.completions.create(
+            model=MODEL,
+            messages=messages,
+            temperature=0.7,
+        )
+        
+        assistant_message = response.choices[0].message.content
+        logger.info(f"Received response from model")
+        return assistant_message
+
+    except Exception as e:
+        error_msg = f"Error: {str(e)}"
+        logger.error(error_msg)
+        return f" I apologize, but I encountered an error. Please try again or contact support if the issue persists. Error details: {str(e)}"
+
+# Create the Gradio interface with custom theme
+theme = gr.themes.Soft().set(
+    primary_hue="blue",
+    secondary_hue="gray",
+)
+
+with gr.Blocks(theme=theme) as demo:
+    gr.Markdown("""
+    #  Chat with Stoney-1
+    
+    Welcome to the Stoney-1 chat interface! This AI assistant is powered by a fine-tuned model designed to help you.
+    
+    ### Tips:
+    - Be clear and specific in your questions
+    - You can have a natural conversation
+    - Use the example messages below to get started
+    """)
+    
+    chatbot = gr.Chatbot(
+        value=[],
+        label="Chat History",
+        height=400,
+        bubble_full_width=False,
+    )
+    
+    with gr.Row():
+        msg = gr.Textbox(
+            label="Your message",
+            placeholder="Type your message here...",
+            lines=2,
+            scale=9
+        )
+        send_btn = gr.Button("Send", scale=1, variant="primary")
+
+    clear = gr.ClearButton([msg, chatbot], value="Clear Chat")
+
+    # Example messages
+    gr.Examples(
+        examples=[
+            "Hello, how are you?",
+            "What can you help me with?",
+            "Tell me about yourself",
+        ],
+        inputs=msg,
+    )
+
+    # Set up event handlers
+    msg.submit(chat_with_stoney, [msg, chatbot], [msg, chatbot])
+    send_btn.click(chat_with_stoney, [msg, chatbot], [msg, chatbot])
+
+# Launch configuration
+if __name__ == "__main__":
+    demo.launch()
+
+================================================
+FILE: requirements.txt
+================================================
+gradio>=4.0.0
+openai>=1.0.0
+python-dotenv>=1.0.0
