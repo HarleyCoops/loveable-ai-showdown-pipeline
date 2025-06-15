@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """
 run_full_pipeline.py - Orchestrate the full data pipeline for LoveableAIShowdown.
@@ -36,7 +35,7 @@ def main():
     print("\n=== Step 2/3: Convert to fine-tuning format ===")
     for dict_file in sorted(dict_dir.glob("*Dictionary.json")):
         dialect = dict_file.stem.replace("Dictionary", "")
-        in_file = output_dir / f"synthetic_qa_{dialect}_openai.jsonl"
+        in_file = dict_dir / f"synthetic_qa_{dialect}_openai.jsonl"
         out_base = output_dir / f"finetune_qa_{dialect}"
         print(f"\n-- Processing dialect: {dialect} --")
         subprocess.run([
