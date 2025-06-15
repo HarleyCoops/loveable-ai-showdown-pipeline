@@ -27,6 +27,7 @@ import shutil
 from datetime import datetime
 from huggingface_hub import HfApi, Repository, create_repo
 from dotenv import load_dotenv
+from textwrap import dedent
 
 # Load environment variables from .env file
 load_dotenv(Path(__file__).parent / '.env')
@@ -110,21 +111,18 @@ class HFSpacesDeployer:
         (output_dir / "requirements.txt").write_text(REQUIREMENTS_TEMPLATE, encoding='utf-8')
         username = self.hf_api.whoami()['name']
         deploy_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        # Patch: Provide actual metadata, not placeholders
-        yaml_block = (
-            f"""---
-"""
-            f"title: \"{model_id}\"\n"
-            f"emoji: \"💬\"\n"
-            f"colorFrom: \"blue\"\n"
-            f"colorTo: \"indigo\"\n"
-            f"sdk: gradio\n"
-            f"sdk_version: \"4.0.0\"\n"
-            f"app_file: app.py\n"
-            f"pinned: false\n"
-            f"---\n"
-        )
-        # Note: No blank line after the YAML, markdown starts immediately.
+        yaml_block = dedent(f"""\
+---
+title: "{model_id}"
+emoji: "💬"
+colorFrom: "blue"
+colorTo: "indigo"
+sdk: "gradio"
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+---
+""")
         readme_content = f"""{yaml_block}# AI Chat Interface
 
 A Gradio-based chat interface for interacting with a fine-tuned OpenAI model.
@@ -328,6 +326,7 @@ def main():
             model_id=args.model_id,
             organization=args.organization,
             private=not args.public,
+            skip_if_exists=False,
             verbose=args.verbose
         )
         print(f"\n✅ Successfully deployed to: {space_url}")
