@@ -28,7 +28,7 @@ const Index = () => {
       <main className="flex-1 flex items-center justify-center relative z-10">
         <div className="w-full max-w-xl px-4">
           <div className="aspect-video bg-muted rounded-xl flex items-center justify-center shadow-lg border-2 border-muted-foreground/30">
-            {/* Video placeholder with actual MP4 */}
+            {/* Video placeholder using the correct lowercase 'public' path */}
             <video
               className="w-full h-full object-contain rounded-xl"
               controls
