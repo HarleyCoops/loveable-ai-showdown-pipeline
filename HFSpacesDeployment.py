@@ -111,18 +111,20 @@ class HFSpacesDeployer:
         username = self.hf_api.whoami()['name']
         deploy_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         # Patch: Provide actual metadata, not placeholders
-        yaml_block = f"""---
-title: "{model_id}"
-emoji: "💬"
-colorFrom: "blue"
-colorTo: "indigo"
-sdk: "gradio"
-sdk_version: "4.0.0"
-app_file: app.py
-pinned: false
----
+        yaml_block = (
+            f"""---
 """
-
+            f"title: \"{model_id}\"\n"
+            f"emoji: \"💬\"\n"
+            f"colorFrom: \"blue\"\n"
+            f"colorTo: \"indigo\"\n"
+            f"sdk: gradio\n"
+            f"sdk_version: \"4.0.0\"\n"
+            f"app_file: app.py\n"
+            f"pinned: false\n"
+            f"---\n"
+        )
+        # Note: No blank line after the YAML, markdown starts immediately.
         readme_content = f"""{yaml_block}# AI Chat Interface
 
 A Gradio-based chat interface for interacting with a fine-tuned OpenAI model.
