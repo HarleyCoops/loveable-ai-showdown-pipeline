@@ -72,17 +72,17 @@ const Dashboard = () => {
   return (
     <div className="w-full h-full min-h-screen bg-background flex flex-col md:flex-row gap-4 p-2 md:p-6">
       {/* Document browser (left) */}
-      <section className="flex-[1.3] min-w-[180px] max-w-[260px] bg-card border rounded-md shadow-inner flex flex-col p-4">
+      <section className="flex-[0.75] min-w-[120px] max-w-[170px] bg-card border rounded-md shadow-inner flex flex-col p-4">
         <h2 className="font-semibold text-base mb-3 text-primary border-b pb-2">
-          Uploaded Source Files
+          Extracted Ground Truth
         </h2>
         <FileList files={dictionaryFiles} />
       </section>
 
       {/* Extracted dictionaries (center) */}
-      <section className="flex-[2.3] min-w-[220px] bg-card border rounded-md shadow-inner flex flex-col p-4">
+      <section className="flex-[1.2] min-w-[140px] max-w-[200px] bg-card border rounded-md shadow-inner flex flex-col p-4">
         <h2 className="font-semibold text-base mb-3 text-primary border-b pb-2">
-          Extracted Dictionaries
+          Dictionaries
         </h2>
         <ul className="space-y-3">
           {extractedDictionaries.map((dict) => (
