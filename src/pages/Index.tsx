@@ -24,13 +24,9 @@ const Index = () => {
         </p>
       </header>
 
-      {/* Content area without video */}
+      {/* Content area without video or placeholder box */}
       <main className="flex-1 flex items-center justify-center relative z-10">
-        <div className="w-full max-w-xl px-4">
-          <div className="aspect-video bg-muted rounded-xl flex items-center justify-center shadow-lg border-2 border-muted-foreground/30">
-            {/* Video removed as requested */}
-          </div>
-        </div>
+        {/* No aspect-video or placeholder here anymore */}
       </main>
     </div>
   );
