@@ -17,7 +17,7 @@ const Index = () => {
       {/* Header at the top for the title and subtitle */}
       <header className="relative z-10 w-full px-4 pt-8 pb-4 flex flex-col items-center backdrop-blur-sm bg-background/70">
         <h1 className="text-2xl md:text-4xl font-bold text-foreground drop-shadow mb-2 text-center">
-          Welcome to Dictionary to OpenAI: A Low-Resource Language Trainer
+          Welcome to <span className="whitespace-pre">{'"Dictionary to OpenAI: A Low-Resource Language Trainer"'}</span>
         </h1>
         <p className="text-base md:text-xl text-muted-foreground font-medium text-center">
           Pardon the landing page while I build in the background for a few more hours
