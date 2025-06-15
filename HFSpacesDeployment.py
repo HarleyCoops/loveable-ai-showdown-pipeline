@@ -41,7 +41,7 @@ logger = logging.getLogger(__name__)
 
 # Constants
 APP_TEMPLATE_PATH = Path("HFSpacesApp/app_template.py")
-REQUIREMENTS_TEMPLATE = """gradio>=4.0.0
+REQUIREMENTS_TEMPLATE = """gradio>=5.34.0
 openai>=1.0.0
 python-dotenv>=1.0.0
 """
@@ -118,7 +118,7 @@ emoji: "💬"
 colorFrom: "blue"
 colorTo: "indigo"
 sdk: "gradio"
-sdk_version: "4.0.0"
+sdk_version: "5.34.0"
 app_file: app.py
 pinned: false
 ---
