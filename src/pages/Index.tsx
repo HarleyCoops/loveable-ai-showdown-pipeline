@@ -49,7 +49,7 @@ const readySplits = [
 
 const StatusDot = ({ color = "bg-green-500" }: { color?: string }) => (
   <span
-    className={`inline-block w-3 h-3 rounded-full mr-2 ${color} border border-green-600 align-middle`}
+    className={`inline-block w-3 h-3 rounded-full mr-2 ${color} border-2 border-white shadow-sm align-middle`}
     aria-label="Ready"
   />
 );
