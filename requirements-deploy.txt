@@ -1,2 +1,5 @@
 
-# Placeholder for requirements-deploy.txt
+openai>=1.0.0
+huggingface-hub>=0.16.0
+gitpython>=3.1.0
+python-dotenv>=1.0.0
