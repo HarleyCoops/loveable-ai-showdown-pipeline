@@ -111,18 +111,19 @@ class HFSpacesDeployer:
         username = self.hf_api.whoami()['name']
         deploy_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-        # Patch: Provide actual metadata, not placeholders
-        yaml_block = f"""---
+        # Strict Hugging Face Spaces YAML format (no leading/trailing blank lines or extra fields)
+        yaml_block = (
+f"""---
 title: "{model_id}"
 emoji: "💬"
 colorFrom: "blue"
 colorTo: "indigo"
-sdk: "gradio"
+sdk: gradio
 sdk_version: "4.0.0"
 app_file: app.py
-pinned: false
 ---
 """
+        )
 
         readme_content = f"""{yaml_block}# AI Chat Interface
 
