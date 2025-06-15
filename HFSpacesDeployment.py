@@ -112,12 +112,12 @@ class HFSpacesDeployer:
         deploy_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         # Add Hugging Face Spaces YAML config block
         yaml_block = f'''---
-title: {space_name}
-emoji: 🚀
-colorFrom: indigo
-colorTo: blue
-sdk: gradio
-sdk_version: "4.0.0"
+title: {{title}}
+emoji: {{emoji}}
+colorFrom: {{colorFrom}}
+colorTo: {{colorTo}}
+sdk: {{sdk}}
+sdk_version: "{{sdkVersion}}"
 app_file: app.py
 pinned: false
 ---
