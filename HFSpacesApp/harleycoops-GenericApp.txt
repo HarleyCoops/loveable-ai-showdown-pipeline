@@ -80,7 +80,7 @@ Required environment variables:
 ## Model Information
 
 The application uses a fine-tuned OpenAI model:
-- Model ID: `ft:gpt-4o-mini-2024-07-18:personal:stoney-mini:AfX6g37I`
+- Model ID: ``
 - Temperature: 0.7
 
 ## Contributing
