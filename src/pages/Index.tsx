@@ -24,19 +24,11 @@ const Index = () => {
         </p>
       </header>
 
-      {/* Content area for video placeholder */}
+      {/* Content area without video */}
       <main className="flex-1 flex items-center justify-center relative z-10">
         <div className="w-full max-w-xl px-4">
           <div className="aspect-video bg-muted rounded-xl flex items-center justify-center shadow-lg border-2 border-muted-foreground/30">
-            {/* Video placeholder using the correct lowercase 'public' path */}
-            <video
-              className="w-full h-full object-contain rounded-xl"
-              controls
-              poster="/placeholder.svg"
-            >
-              <source src="/LoveableAIShowdown.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {/* Video removed as requested */}
           </div>
         </div>
       </main>
