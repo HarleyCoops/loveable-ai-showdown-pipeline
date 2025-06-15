@@ -4,15 +4,15 @@ import React from "react";
 const Index = () => {
   return (
     <div className="relative min-h-screen bg-background flex flex-col">
-      {/* Map background layer with less blur and higher visibility */}
+      {/* Map background layer with minimal blur and higher visibility */}
       <img
         src="/lovable-uploads/cab9a7dc-b686-4496-854d-dfe6f4b8d09e.png"
         alt="Historic First Nations Map"
-        className="absolute inset-0 w-full h-full object-cover opacity-80 blur-[0.5px] pointer-events-none select-none z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-95 blur-[0.15px] pointer-events-none select-none z-0"
         aria-hidden="true"
       />
-      {/* Lighter overlay for background */}
-      <div className="absolute inset-0 bg-background/30 z-0" aria-hidden="true" />
+      {/* Lighter overlay for background, more transparent for clarity */}
+      <div className="absolute inset-0 bg-background/10 z-0" aria-hidden="true" />
 
       {/* Header at the top for the title and subtitle */}
       <header className="relative z-10 w-full px-4 pt-8 pb-4 flex flex-col items-center backdrop-blur-sm bg-background/70">
@@ -24,7 +24,7 @@ const Index = () => {
         </p>
       </header>
 
-      {/* Content area without video or placeholder box */}
+      {/* Content area */}
       <main className="flex-1 flex items-center justify-center relative z-10">
         {/* No aspect-video or placeholder here anymore */}
       </main>
