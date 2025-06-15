@@ -111,7 +111,7 @@ class HFSpacesDeployer:
         username = self.hf_api.whoami()['name']
         deploy_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-        # Strict Hugging Face Spaces YAML format (no leading/trailing blank lines or extra fields)
+        # Strict single-line separation between YAML and markdown, no 'pinned' field.
         yaml_block = (
 f"""---
 title: "{model_id}"
@@ -122,9 +122,9 @@ sdk: gradio
 sdk_version: "4.0.0"
 app_file: app.py
 ---
-"""
-        )
+""")
 
+        # Note: No blank line after the YAML, markdown starts immediately.
         readme_content = f"""{yaml_block}# AI Chat Interface
 
 A Gradio-based chat interface for interacting with a fine-tuned OpenAI model.
