@@ -1,2 +1,24 @@
 
-# Placeholder for requirements.txt
+# Core dependencies
+google-generativeai>=0.3.0
+python-dotenv>=1.0.0
+wandb>=0.16.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# JSON handling
+jsonschema>=4.17.0
+
+# Model training
+torch>=2.0.0
+transformers>=4.36.0
+datasets>=2.14.0
+accelerate>=0.25.0
+
+# Utilities
+requests>=2.31.0
+tqdm>=4.65.0
+colorama>=0.4.6  # For colored terminal output
