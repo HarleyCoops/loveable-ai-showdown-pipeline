@@ -1,0 +1,1142 @@
+[
+  {
+    "number": "1",
+    "english": "Man",
+    "translation": "youh"
+  },
+  {
+    "number": "2",
+    "english": "Woman",
+    "translation": "un-nāh"
+  },
+  {
+    "number": "3",
+    "english": "Boy",
+    "translation": "'kl-wām-ilk"
+  },
+  {
+    "number": "4",
+    "english": "Girl",
+    "translation": "tshus-kim-un-nah"
+  },
+  {
+    "number": "5",
+    "english": "Infant",
+    "translation": "kl-ku-am-ilk"
+  },
+  {
+    "number": "6",
+    "english": "My father (said by son)",
+    "translation": "nenio-noog-wādh"
+  },
+  {
+    "number": "7",
+    "english": "My father (said by daughter)",
+    "translation": "ābo"
+  },
+  {
+    "number": "8",
+    "english": "My mother (said by son)",
+    "translation": "now-us"
+  },
+  {
+    "number": "9",
+    "english": "My mother (said by daughter)",
+    "translation": "nai-yoo"
+  },
+  {
+    "number": "10",
+    "english": "My husband",
+    "translation": "nux-soo"
+  },
+  {
+    "number": "11",
+    "english": "My wife",
+    "translation": "nux-soo"
+  },
+  {
+    "number": "12",
+    "english": "My son (said by father)",
+    "translation": ""
+  },
+  {
+    "number": "13",
+    "english": "My son (said by mother)",
+    "translation": ""
+  },
+  {
+    "number": "14",
+    "english": "My daughter (said by father)",
+    "translation": ""
+  },
+  {
+    "number": "15",
+    "english": "My daughter (said by mother)",
+    "translation": ""
+  },
+  {
+    "number": "16",
+    "english": "My elder brother",
+    "translation": "shi-li-git"
+  },
+  {
+    "number": "17",
+    "english": "My younger brother",
+    "translation": "tsoo-wan-īgit"
+  },
+  {
+    "number": "18",
+    "english": "My elder sister",
+    "translation": "shi-li-git"
+  },
+  {
+    "number": "19",
+    "english": "My younger sister",
+    "translation": "tsoo-wan-īgit"
+  },
+  {
+    "number": "20",
+    "english": "An Indian",
+    "translation": ""
+  },
+  {
+    "number": "21",
+    "english": "People",
+    "translation": "in-tsă-bum"
+  },
+  {
+    "number": "22",
+    "english": "Head",
+    "translation": "tunk-ows"
+  },
+  {
+    "number": "23",
+    "english": "Hair",
+    "translation": "kāoos"
+  },
+  {
+    "number": "24",
+    "english": "Face",
+    "translation": "tzel"
+  },
+  {
+    "number": "25",
+    "english": "Forehead",
+    "translation": "woa-puh"
+  },
+  {
+    "number": "26",
+    "english": "Ear",
+    "translation": "moo"
+  },
+  {
+    "number": "27",
+    "english": "Eye",
+    "translation": "wileil"
+  },
+  {
+    "number": "28",
+    "english": "Nose",
+    "translation": "tsuh"
+  },
+  {
+    "number": "29",
+    "english": "Mouth",
+    "translation": "āh"
+  },
+  {
+    "number": "30",
+    "english": "Tongue",
+    "translation": "too-wulla"
+  },
+  {
+    "number": "31",
+    "english": "Teeth",
+    "translation": "wän"
+  },
+  {
+    "number": "32",
+    "english": "Beard",
+    "translation": "imuh"
+  },
+  {
+    "number": "33",
+    "english": "Neck",
+    "translation": "tum-lā-ni"
+  },
+  {
+    "number": "34",
+    "english": "Arm",
+    "translation": "un-on"
+  },
+  {
+    "number": "35",
+    "english": "Hand",
+    "translation": "un-on"
+  },
+  {
+    "number": "36",
+    "english": "Fingers",
+    "translation": "kut-soo-ald"
+  },
+  {
+    "number": "37",
+    "english": "Thumb",
+    "translation": "moas"
+  },
+  {
+    "number": "38",
+    "english": "Nails",
+    "translation": "thluhs"
+  },
+  {
+    "number": "39",
+    "english": "Body",
+    "translation": "tk-kum-ō"
+  },
+  {
+    "number": "40",
+    "english": "Chest",
+    "translation": "kaik"
+  },
+  {
+    "number": "41",
+    "english": "Belly",
+    "translation": "pan"
+  },
+  {
+    "number": "42",
+    "english": "Female breasts",
+    "translation": "mash"
+  },
+  {
+    "number": "43",
+    "english": "Leg",
+    "translation": "āsī"
+  },
+  {
+    "number": "44",
+    "english": "Foot",
+    "translation": "āsī shim-shi"
+  },
+  {
+    "number": "45",
+    "english": "Toes",
+    "translation": "kut-soo-wan-uh"
+  },
+  {
+    "number": "46",
+    "english": "Bone",
+    "translation": "sai'-ip"
+  },
+  {
+    "number": "47",
+    "english": "Heart",
+    "translation": "kõht"
+  },
+  {
+    "number": "48",
+    "english": "Blood",
+    "translation": "ihl-thle"
+  },
+  {
+    "number": "49",
+    "english": "Town, village",
+    "translation": "walp"
+  },
+  {
+    "number": "50",
+    "english": "Chief",
+    "translation": "sim-oikit"
+  },
+  {
+    "number": "51",
+    "english": "Warrior",
+    "translation": "kut-kit-um-yooht"
+  },
+  {
+    "number": "52",
+    "english": "Friend",
+    "translation": "ni-si-āpun-usk"
+  },
+  {
+    "number": "53",
+    "english": "House",
+    "translation": "wālp"
+  },
+  {
+    "number": "54",
+    "english": "Skin lodge",
+    "translation": ""
+  },
+  {
+    "number": "55",
+    "english": "Kettle",
+    "translation": "kai-thlum-to-utsk"
+  },
+  {
+    "number": "56",
+    "english": "Bow",
+    "translation": "ha-kwu-tak"
+  },
+  {
+    "number": "57",
+    "english": "Arrow",
+    "translation": "ha-wal"
+  },
+  {
+    "number": "58",
+    "english": "Axe, hatchet",
+    "translation": "ki-gioatik"
+  },
+  {
+    "number": "59",
+    "english": "Knife",
+    "translation": "il-thla-pishk"
+  },
+  {
+    "number": "60",
+    "english": "Canoe",
+    "translation": "hush-ho"
+  },
+  {
+    "number": "61",
+    "english": "Moccasins",
+    "translation": "tsa-oshs"
+  },
+  {
+    "number": "62",
+    "english": "Pipe",
+    "translation": "hah-pai-an"
+  },
+  {
+    "number": "63",
+    "english": "Tobacco",
+    "translation": "damp-shi-wa"
+  },
+  {
+    "number": "64",
+    "english": "Sky",
+    "translation": "luh-ha"
+  },
+  {
+    "number": "65",
+    "english": "Sun",
+    "translation": "kim-muk"
+  },
+  {
+    "number": "66",
+    "english": "Moon",
+    "translation": "kim-ākum-ātuk'"
+  },
+  {
+    "number": "67",
+    "english": "Star",
+    "translation": "pi-alst"
+  },
+  {
+    "number": "68",
+    "english": "Day",
+    "translation": "tsioos"
+  },
+  {
+    "number": "69",
+    "english": "Night",
+    "translation": "ho-apl"
+  },
+  {
+    "number": "70",
+    "english": "Morning",
+    "translation": "kun-tlak"
+  },
+  {
+    "number": "71",
+    "english": "Evening",
+    "translation": "tlad-um-hopl"
+  },
+  {
+    "number": "72",
+    "english": "Spring",
+    "translation": "tla-la-hlam'-ix"
+  },
+  {
+    "number": "73",
+    "english": "Summer",
+    "translation": "shoo'-unt"
+  },
+  {
+    "number": "74",
+    "english": "Autumn",
+    "translation": "klak-shoo'-ut"
+  },
+  {
+    "number": "75",
+    "english": "Winter",
+    "translation": "kāum'-shim"
+  },
+  {
+    "number": "76",
+    "english": "Wind",
+    "translation": "pā-ask"
+  },
+  {
+    "number": "77",
+    "english": "Thunder",
+    "translation": "kul'-āpil-e-ip"
+  },
+  {
+    "number": "78",
+    "english": "Lightning",
+    "translation": "tsam-ti"
+  },
+  {
+    "number": "79",
+    "english": "Rain",
+    "translation": "wās"
+  },
+  {
+    "number": "80",
+    "english": "Snow",
+    "translation": "moax"
+  },
+  {
+    "number": "81",
+    "english": "Fire",
+    "translation": "lak"
+  },
+  {
+    "number": "82",
+    "english": "Water",
+    "translation": "ux"
+  },
+  {
+    "number": "83",
+    "english": "Ice",
+    "translation": "tauw"
+  },
+  {
+    "number": "84",
+    "english": "Earth, land",
+    "translation": "yu-op"
+  },
+  {
+    "number": "85",
+    "english": "Sea",
+    "translation": "maon"
+  },
+  {
+    "number": "86",
+    "english": "River",
+    "translation": "kul-a-uk"
+  },
+  {
+    "number": "87",
+    "english": "Lake",
+    "translation": "luh-tā"
+  },
+  {
+    "number": "88",
+    "english": "Valley",
+    "translation": "tsau-on"
+  },
+  {
+    "number": "89",
+    "english": "Prairie",
+    "translation": "lah'-an-ēbā"
+  },
+  {
+    "number": "90",
+    "english": "Hill, mountain",
+    "translation": "lah-te"
+  },
+  {
+    "number": "91",
+    "english": "Island",
+    "translation": "luk-stā"
+  },
+  {
+    "number": "92",
+    "english": "Stone, rock",
+    "translation": "loap"
+  },
+  {
+    "number": "93",
+    "english": "Salt",
+    "translation": "mōan"
+  },
+  {
+    "number": "94",
+    "english": "Iron",
+    "translation": "tō-utsk"
+  },
+  {
+    "number": "95",
+    "english": "Forest",
+    "translation": "kun-ākun"
+  },
+  {
+    "number": "96",
+    "english": "Tree",
+    "translation": "kun"
+  },
+  {
+    "number": "97",
+    "english": "Wood",
+    "translation": "kun"
+  },
+  {
+    "number": "98",
+    "english": "Leaf",
+    "translation": "yan-is"
+  },
+  {
+    "number": "99",
+    "english": "Bark",
+    "translation": "mās"
+  },
+  {
+    "number": "100",
+    "english": "Grass",
+    "translation": "ki-oaht"
+  },
+  {
+    "number": "101",
+    "english": "Pine",
+    "translation": ""
+  },
+  {
+    "number": "102",
+    "english": "Maize",
+    "translation": ""
+  },
+  {
+    "number": "103",
+    "english": "Squash",
+    "translation": ""
+  },
+  {
+    "number": "104",
+    "english": "Flesh, meat",
+    "translation": "sham'-mi"
+  },
+  {
+    "number": "105",
+    "english": "Dog",
+    "translation": "hā-as"
+  },
+  {
+    "number": "106",
+    "english": "Buffalo",
+    "translation": ""
+  },
+  {
+    "number": "107",
+    "english": "Bear (black)",
+    "translation": "olh"
+  },
+  {
+    "number": "108",
+    "english": "Wolf",
+    "translation": "ki-bauw"
+  },
+  {
+    "number": "109",
+    "english": "Fox",
+    "translation": ""
+  },
+  {
+    "number": "110",
+    "english": "Deer",
+    "translation": "wunn"
+  },
+  {
+    "number": "111",
+    "english": "Elk",
+    "translation": "wid-zī"
+  },
+  {
+    "number": "112",
+    "english": "Beaver",
+    "translation": "stsõälh"
+  },
+  {
+    "number": "113",
+    "english": "Rabbit, hare",
+    "translation": ""
+  },
+  {
+    "number": "114",
+    "english": "Tortoise",
+    "translation": ""
+  },
+  {
+    "number": "115",
+    "english": "Horse",
+    "translation": ""
+  },
+  {
+    "number": "116",
+    "english": "Fly",
+    "translation": "ki-ik"
+  },
+  {
+    "number": "117",
+    "english": "Mosquito",
+    "translation": "ki-ik"
+  },
+  {
+    "number": "118",
+    "english": "Snake",
+    "translation": "mit-hal-alt'"
+  },
+  {
+    "number": "119",
+    "english": "Rattlesnake",
+    "translation": ""
+  },
+  {
+    "number": "120",
+    "english": "Bird",
+    "translation": "tsō-uts"
+  },
+  {
+    "number": "121",
+    "english": "Egg",
+    "translation": "tl-kum-at'"
+  },
+  {
+    "number": "122",
+    "english": "Feathers",
+    "translation": "li"
+  },
+  {
+    "number": "123",
+    "english": "Wings",
+    "translation": "kuk-ai"
+  },
+  {
+    "number": "124",
+    "english": "Goose",
+    "translation": "ha-ush"
+  },
+  {
+    "number": "125",
+    "english": "Duck (mallard)",
+    "translation": "na-näht"
+  },
+  {
+    "number": "126",
+    "english": "Turkey",
+    "translation": ""
+  },
+  {
+    "number": "127",
+    "english": "Pigeon",
+    "translation": ""
+  },
+  {
+    "number": "128",
+    "english": "Fish",
+    "translation": ""
+  },
+  {
+    "number": "129",
+    "english": "Salmon",
+    "translation": "hoān"
+  },
+  {
+    "number": "130",
+    "english": "Sturgeon",
+    "translation": ""
+  },
+  {
+    "number": "131",
+    "english": "Name",
+    "translation": "wan"
+  },
+  {
+    "number": "132",
+    "english": "White",
+    "translation": "mō-ksk"
+  },
+  {
+    "number": "133",
+    "english": "Black",
+    "translation": "tow-utsk"
+  },
+  {
+    "number": "134",
+    "english": "Red",
+    "translation": "misk"
+  },
+  {
+    "number": "135",
+    "english": "Light blue",
+    "translation": "kwās"
+  },
+  {
+    "number": "136",
+    "english": "Yellow",
+    "translation": "smisk"
+  },
+  {
+    "number": "137",
+    "english": "Light green",
+    "translation": "mit-mit-atuk"
+  },
+  {
+    "number": "138",
+    "english": "Great, large",
+    "translation": "wil-ēiks"
+  },
+  {
+    "number": "139",
+    "english": "Small, little",
+    "translation": "tsoosk"
+  },
+  {
+    "number": "140",
+    "english": "Strong",
+    "translation": "kut-kit"
+  },
+  {
+    "number": "141",
+    "english": "Old",
+    "translation": "wit-agh-kit'"
+  },
+  {
+    "number": "142",
+    "english": "Young",
+    "translation": "shoo-push'"
+  },
+  {
+    "number": "143",
+    "english": "Good",
+    "translation": "am"
+  },
+  {
+    "number": "144",
+    "english": "Bad",
+    "translation": "atuhk"
+  },
+  {
+    "number": "145",
+    "english": "Dead",
+    "translation": "tsuk"
+  },
+  {
+    "number": "146",
+    "english": "Alive",
+    "translation": "ti-tools-wilh"
+  },
+  {
+    "number": "147",
+    "english": "Cold",
+    "translation": "huh-kwatux'"
+  },
+  {
+    "number": "148",
+    "english": "Warm",
+    "translation": "kium-uk"
+  },
+  {
+    "number": "149",
+    "english": "I",
+    "translation": "neuio"
+  },
+  {
+    "number": "150",
+    "english": "Thou",
+    "translation": "no-on"
+  },
+  {
+    "number": "151",
+    "english": "He",
+    "translation": "nit"
+  },
+  {
+    "number": "152",
+    "english": "We",
+    "translation": "noom"
+  },
+  {
+    "number": "153",
+    "english": "Ye",
+    "translation": "neu-ěshim"
+  },
+  {
+    "number": "154",
+    "english": "They",
+    "translation": "tip-kwit"
+  },
+  {
+    "number": "155",
+    "english": "This",
+    "translation": "kwa"
+  },
+  {
+    "number": "156",
+    "english": "That",
+    "translation": "kwit"
+  },
+  {
+    "number": "157",
+    "english": "All",
+    "translation": "tihāni"
+  },
+  {
+    "number": "158",
+    "english": "Many, much",
+    "translation": "wi-heilt"
+  },
+  {
+    "number": "159",
+    "english": "Who",
+    "translation": ""
+  },
+  {
+    "number": "160",
+    "english": "Far",
+    "translation": "wai-to"
+  },
+  {
+    "number": "161",
+    "english": "Near",
+    "translation": "kai-un-gwai"
+  },
+  {
+    "number": "162",
+    "english": "Here",
+    "translation": "ki"
+  },
+  {
+    "number": "163",
+    "english": "There",
+    "translation": "kwit"
+  },
+  {
+    "number": "164",
+    "english": "To-day",
+    "translation": "ki-aunsa"
+  },
+  {
+    "number": "165",
+    "english": "Yesterday",
+    "translation": "kit-sīp"
+  },
+  {
+    "number": "166",
+    "english": "To-morrow",
+    "translation": "tshik-atship'"
+  },
+  {
+    "number": "167",
+    "english": "Yes",
+    "translation": "nit"
+  },
+  {
+    "number": "168",
+    "english": "No",
+    "translation": "a-in"
+  },
+  {
+    "number": "169",
+    "english": "One",
+    "translation": "ke-ul"
+  },
+  {
+    "number": "170",
+    "english": "Two",
+    "translation": "koopl"
+  },
+  {
+    "number": "171",
+    "english": "Three",
+    "translation": "kwul-le"
+  },
+  {
+    "number": "172",
+    "english": "Four",
+    "translation": "tuh-al-puh"
+  },
+  {
+    "number": "173",
+    "english": "Five",
+    "translation": "kus-toons"
+  },
+  {
+    "number": "174",
+    "english": "Six",
+    "translation": "kāw-ult"
+  },
+  {
+    "number": "175",
+    "english": "Seven",
+    "translation": "tup-hō-hlt'"
+  },
+  {
+    "number": "176",
+    "english": "Eight",
+    "translation": "koaldh"
+  },
+  {
+    "number": "177",
+    "english": "Nine",
+    "translation": "kus-tum-oās'"
+  },
+  {
+    "number": "178",
+    "english": "Ten",
+    "translation": "kai-ip"
+  },
+  {
+    "number": "179",
+    "english": "Eleven",
+    "translation": "kaip-ti-kā-ak"
+  },
+  {
+    "number": "180",
+    "english": "Twelve",
+    "translation": "kaip-ti-tup-hāt"
+  },
+  {
+    "number": "181",
+    "english": "Twenty",
+    "translation": "koo-pl-wil-kip"
+  },
+  {
+    "number": "182",
+    "english": "Thirty",
+    "translation": "kwul-li-wil-kip"
+  },
+  {
+    "number": "183",
+    "english": "Forty",
+    "translation": ""
+  },
+  {
+    "number": "184",
+    "english": "Fifty",
+    "translation": ""
+  },
+  {
+    "number": "185",
+    "english": "Sixty",
+    "translation": ""
+  },
+  {
+    "number": "186",
+    "english": "Seventy",
+    "translation": ""
+  },
+  {
+    "number": "187",
+    "english": "Eighty",
+    "translation": "kla-le-stan-sha-ma"
+  },
+  {
+    "number": "188",
+    "english": "Ninety",
+    "translation": ""
+  },
+  {
+    "number": "189",
+    "english": "One hundred",
+    "translation": "kshin-shoal"
+  },
+  {
+    "number": "190",
+    "english": "One thousand",
+    "translation": "tuh-whol-wul-ghap"
+  },
+  {
+    "number": "191",
+    "english": "To eat",
+    "translation": "kup-il"
+  },
+  {
+    "number": "192",
+    "english": "To drink",
+    "translation": "āksi"
+  },
+  {
+    "number": "193",
+    "english": "To run",
+    "translation": "ul-loo-bān"
+  },
+  {
+    "number": "194",
+    "english": "To dance",
+    "translation": "ni-luk"
+  },
+  {
+    "number": "195",
+    "english": "To sing",
+    "translation": "li-mi"
+  },
+  {
+    "number": "196",
+    "english": "To sleep",
+    "translation": "huh-staw'-gun"
+  },
+  {
+    "number": "197",
+    "english": "To speak",
+    "translation": "a-al-gu-hun"
+  },
+  {
+    "number": "198",
+    "english": "To see",
+    "translation": "ni-ilth"
+  },
+  {
+    "number": "199",
+    "english": "To love",
+    "translation": ""
+  },
+  {
+    "number": "200",
+    "english": "To kill",
+    "translation": "tsā-guntl"
+  },
+  {
+    "number": "201",
+    "english": "To sit",
+    "translation": "ta-an"
+  },
+  {
+    "number": "202",
+    "english": "To stand",
+    "translation": "hai'-it-kun -in"
+  },
+  {
+    "number": "203",
+    "english": "To go",
+    "translation": "tā-ut-lhan or tawlh"
+  },
+  {
+    "number": "204",
+    "english": "To come",
+    "translation": "kul"
+  },
+  {
+    "number": "205",
+    "english": "To walk",
+    "translation": "klad-um-yān-i"
+  },
+  {
+    "number": "206",
+    "english": "To work",
+    "translation": "at-lal-is"
+  },
+  {
+    "number": "207",
+    "english": "To steal",
+    "translation": "kā-luk"
+  },
+  {
+    "number": "208",
+    "english": "To lie",
+    "translation": "pi-ik"
+  },
+  {
+    "number": "209",
+    "english": "To give",
+    "translation": "kil-lam-ilh"
+  },
+  {
+    "number": "210",
+    "english": "To laugh",
+    "translation": "shis-ah-shin"
+  },
+  {
+    "number": "211",
+    "english": "To cry",
+    "translation": "wi-how-ut-kun"
+  },
+  {
+    "number": null,
+    "english": "Afraid",
+    "translation": "pa-as"
+  },
+  {
+    "number": null,
+    "english": "Bear (grizzly)",
+    "translation": "mid-di-uk"
+  },
+  {
+    "number": null,
+    "english": "Clouds",
+    "translation": "yin"
+  },
+  {
+    "number": null,
+    "english": "Country",
+    "translation": "kul-tsub"
+  },
+  {
+    "number": null,
+    "english": "Ear (inner)",
+    "translation": ""
+  },
+  {
+    "number": null,
+    "english": "Finger (little)",
+    "translation": "skai"
+  },
+  {
+    "number": null,
+    "english": "Forefinger",
+    "translation": "hut-se-uh"
+  },
+  {
+    "number": null,
+    "english": "Frog",
+    "translation": "klun-na-ow"
+  },
+  {
+    "number": null,
+    "english": "Grouse (blue)",
+    "translation": "li-itsk"
+  },
+  {
+    "number": null,
+    "english": "House (underground)",
+    "translation": ""
+  },
+  {
+    "number": null,
+    "english": "Mountain",
+    "translation": "skun-e-isht"
+  },
+  {
+    "number": null,
+    "english": "Slave",
+    "translation": "ha"
+  },
+  {
+    "number": null,
+    "english": "Whale",
+    "translation": "tl-pōn"
+  },
+  {
+    "number": null,
+    "english": "To fly",
+    "translation": "ki-pā'-ik"
+  },
+  {
+    "number": null,
+    "english": "In the mouth",
+    "translation": ""
+  },
+  {
+    "number": null,
+    "english": "One of my tribe",
+    "translation": ""
+  },
+  {
+    "number": null,
+    "english": "What is your name",
+    "translation": ""
+  }
+]
