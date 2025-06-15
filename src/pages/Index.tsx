@@ -1,3 +1,4 @@
+
 import React from "react";
 
 // Simulated files from /Dictionary (pretend these are uploaded)
@@ -91,7 +92,9 @@ const Dashboard = () => {
             >
               <StatusDot />
               <span className="font-medium">{dict.name}</span>
-              <span className="ml-2 text-xs text-muted-foreground">({dict.file})</span>
+              <span className="ml-2 text-xs text-muted-foreground">
+                ({dict.file})
+              </span>
               <span className="ml-auto text-xs text-green-600">Ready</span>
             </li>
           ))}
@@ -123,6 +126,21 @@ const Dashboard = () => {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* Embedded Hugging Face Space */}
+      <section className="w-full mt-8 md:mt-0 md:ml-0 flex flex-col">
+        <h2 className="font-semibold text-base mb-3 text-primary border-b pb-2">
+          Try the Thlinkit Skutkwan Chatbot (Live Hugging Face Space)
+        </h2>
+        <div className="relative w-full min-h-[600px] h-[60vh] bg-muted/30 rounded border shadow-inner overflow-hidden">
+          <iframe
+            src="https://huggingface.co/spaces/HarleyCooper/thlinkit-skutkwan"
+            title="Thlinkit Skutkwan - Hugging Face Chatbot"
+            className="w-full h-full border-0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+          />
+        </div>
       </section>
     </div>
   );
