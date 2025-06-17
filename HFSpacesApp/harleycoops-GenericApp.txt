@@ -209,7 +209,7 @@ with gr.Blocks(theme=theme) as demo:
     gr.Markdown("""
     #  Chat with Stoney-1
     
-    Welcome to the Stoney-1 chat interface! This AI assistant is powered by a fine-tuned model designed to help you.
+    Welcome to the  interface! This AI assistant is powered by a fine-tuned model designed to help you.
     
     ### Tips:
     - Be clear and specific in your questions
