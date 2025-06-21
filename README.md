@@ -1,14 +1,46 @@
-# From Dictionary to Training: The Low-Resource Language Trainer
+# Mechanistic Interpretability of Linguistic Patterns in Low-Resource Languages
 
 ![Map showing historical migration](./Public/FullDawsonMap.jpg)
 
- What if you could take any dictionary of any low-resource language, process the text, extract meaningful context, generate synthetic data, then fine-tune a working model all in one step?
+## Research Hypothesis
 
- Using the 1884 Dawson map and dictionary, I have constructed this test case with a complete pipeline of extraction, processing, inference, and training datasets that will allow any First Nations community to begin training their own models toward fluency.
+This project explores the theory from Google DeepMind labs that linguistic patterns can be observed through mechanistic interpretability. By training models on closely related low-resource language variants (Haida, Tlingit, and Tshimshian dialects), we can use neuron activation analysis to understand how language models internally represent and process linguistic relationships.
 
- What is particularly interesting about this dataset is that it contains variations of languages that will allow techniques pioneered by Google DeepMind and Anthropic to actually peer into the activated neurons of the LLM and see how it is reasoning through translation.
+## The Vision
 
- While this model was trained with OpenAI, future training on smaller, open source models might also yield elements of linguistic DNA that tell us how we all might be reasoning with language.
+Using the 1884 Dawson dictionary as our foundation, this dataset provides a unique opportunity to:
+
+1. **Observe Linguistic DNA**: Track how neural networks encode relationships between related languages
+2. **Visualize Translation Reasoning**: Use mechanistic interpretability tools to "watch" neurons fire during translation tasks
+3. **Map Language Evolution**: Understand how models represent dialectical variations within language families
+4. **Decode Internal Representations**: Identify which neurons activate for specific linguistic features
+
+## Research Methodology
+
+### Phase 1: Data Generation (Current)
+- Extract entries from historical dictionaries
+- Generate synthetic QA pairs using advanced language models
+- Create fine-tuning datasets for each dialect variant
+
+### Phase 2: Open Source Model Training (Planned)
+- Train smaller, interpretable models (e.g., GPT-2, BERT variants)
+- Fine-tune on our dialect-specific datasets
+- Maintain full visibility into model architectures
+
+### Phase 3: Mechanistic Analysis (Future)
+- Apply Google DeepMind's interpretability tools
+- Monitor neuron activations during inference
+- Map which neurons encode specific linguistic features
+- Identify cross-dialect pattern recognition
+
+## Why This Dataset?
+
+The closely related nature of these Pacific Northwest languages provides an ideal testbed for mechanistic interpretability because:
+
+- **Controlled Variation**: Dialects share core structures with systematic differences
+- **Historical Documentation**: The 1884 Dawson dictionary provides authenticated linguistic data
+- **Cultural Preservation**: Supports First Nations communities while advancing AI research
+- **Scientific Value**: Reveals how neural networks encode linguistic relationships
 
 
 
