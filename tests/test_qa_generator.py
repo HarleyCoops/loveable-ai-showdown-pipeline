@@ -9,15 +9,21 @@ import tempfile
 from pathlib import Path
 import types
 import unittest
+import os
 
-# Provide a minimal stub for the openai module so the import succeeds
-openai_stub = types.SimpleNamespace(OpenAI=object)
+# Provide a minimal stub for the openai module so the import succeeds.
+class _DummyOpenAI:
+    def __init__(self, *args, **kwargs):
+        pass
+
+openai_stub = types.SimpleNamespace(OpenAI=_DummyOpenAI)
 sys.modules.setdefault('openai', openai_stub)
 
-# Make the Scripts directory importable
-sys.path.append(str(Path(__file__).resolve().parents[1] / 'Scripts'))
+# Import the generator from the new package. The tests stub the OpenAI module
+# so that no network calls are made.
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from openAI_bilingual_qa_generator import BilingualQAGenerator
+from pipeline.qa_generation import BilingualQAGenerator
 
 
 class TestBilingualQAGenerator(unittest.TestCase):
@@ -26,6 +32,9 @@ class TestBilingualQAGenerator(unittest.TestCase):
     def setUp(self):
         self.temp_dir = tempfile.TemporaryDirectory()
         self.temp_path = Path(self.temp_dir.name)
+
+        # Provide a fake API key so the generator does not raise
+        os.environ.setdefault('OPENAI_API_KEY', 'dummy')
 
         # Create a small dictionary file with some missing translations
         self.dict_file = self.temp_path / 'dict.json'

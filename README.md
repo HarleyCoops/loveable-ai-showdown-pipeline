@@ -44,36 +44,45 @@ The closely related nature of these Pacific Northwest languages provides an idea
 
 
 
- ## Quickstart: Run the Full Pipeline
+## Quickstart: Run the Full Pipeline
 
- Simply run the following command to execute the entire pipeline end-to-end (data extraction, synthetic data generation, format conversion, and model fine-tuning) for all dialects:
+The new modular package exposes a single `main.py` CLI. Running the full
+pipeline is now as simple as:
 
- ```bash
- python run_full_pipeline.py
- ```
+```bash
+python main.py generate_qa --dialect-name Thlinkit_Skutkwan \
+    --input Dictionary/Thlinkit_SkutkwanDictionary.json \
+    --output Dictionary/synthetic_qa_Thlinkit_Skutkwan_openai.jsonl
+python main.py convert --dialect Thlinkit_Skutkwan \
+    --input Dictionary/synthetic_qa_Thlinkit_Skutkwan_openai.jsonl \
+    --output Output/finetune_qa_Thlinkit_Skutkwan
+python main.py finetune_openai --dialect Thlinkit_Skutkwan
+```
 
  ## Manual Steps
 
  If you want more control or need to customize individual parts, you can run each step separately:
 
- 1. **Generate synthetic question–answer pairs**
-    ```bash
-    python Scripts/openAI_bilingual_qa_generator.py
-    ```
+1. **Generate synthetic question–answer pairs**
+   ```bash
+   python main.py generate_qa --dialect-name <Dialect> \
+       --input Dictionary/<Dialect>Dictionary.json \
+       --output Dictionary/synthetic_qa_<Dialect>_openai.jsonl
+   ```
 
  2. **Convert to fine-tuning format & split data**  
     Replace `<Dialect>` with the name of the dialect (e.g., `Thlinkit_Skutkwan`):
-    ```bash
-    python Scripts/convert_qa_to_finetune.py \
-      --dialect <Dialect> \
-      --input Dictionary/synthetic_qa_<Dialect>_openai.jsonl \
-      --output Output/finetune_qa_<Dialect>
-    ```
+   ```bash
+   python main.py convert \
+     --dialect <Dialect> \
+     --input Dictionary/synthetic_qa_<Dialect>_openai.jsonl \
+     --output Output/finetune_qa_<Dialect>
+   ```
 
  3. **Launch the OpenAI fine-tuning jobs**
-    ```bash
-    python Scripts/openai_finetune.py
-    ```
+   ```bash
+   python main.py finetune_openai --dialect <Dialect>
+   ```
 
  Outputs and logs for each step can be found in the `Output/` folder.
 
