@@ -12,10 +12,10 @@ import tempfile
 from pathlib import Path
 import unittest
 
-# Allow importing modules from the Scripts directory
-sys.path.append(str(Path(__file__).resolve().parents[1] / 'Scripts'))
+# Import conversion utilities from the package rather than the script wrappers
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from convert_qa_to_finetune import convert_qa_to_chat_format, prepare_fine_tuning_data
+from pipeline.dataset_conversion import convert_qa_to_chat_format, prepare_fine_tuning_data
 
 
 class TestConvertQA(unittest.TestCase):
