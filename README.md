@@ -46,8 +46,9 @@ The closely related nature of these Pacific Northwest languages provides an idea
 
 ## Quickstart: Run the Full Pipeline
 
-The new modular package exposes a single `main.py` CLI. Running the full
-pipeline is now as simple as:
+The new modular package exposes a single `main.py` CLI. If run without any
+arguments it prints a list of available commands. Running the full pipeline is
+as simple as:
 
 ```bash
 python main.py generate_qa --dialect-name Thlinkit_Skutkwan \

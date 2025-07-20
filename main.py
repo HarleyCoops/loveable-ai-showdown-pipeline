@@ -42,7 +42,7 @@ def cmd_finetune_gemma(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Loveable AI pipeline")
-    sub = parser.add_subparsers(dest='command', required=True)
+    sub = parser.add_subparsers(dest='command')
 
     p_ingest = sub.add_parser('ingest')
     p_ingest.add_argument('--dialect-name', required=True)
@@ -76,6 +76,9 @@ def main() -> None:
     p_ftg.set_defaults(func=cmd_finetune_gemma)
 
     args = parser.parse_args()
+    if not hasattr(args, 'func'):
+        parser.print_help()
+        return
     args.func(args)
 
 
