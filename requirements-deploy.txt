@@ -1,5 +1,5 @@
 
-openai>=1.0.0
-huggingface-hub>=0.16.0
-gitpython>=3.1.0
-python-dotenv>=1.0.0
+openai>=2.42.0
+huggingface-hub>=1.19.0
+gitpython>=3.1.50
+python-dotenv>=1.2.2
